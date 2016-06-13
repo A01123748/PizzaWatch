@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PizzaWatch_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Pizzonator" textAlignment="center" id="xWX-Qa-QCF"/>
+                        <label alignment="center" text="Tamaño" id="zp3-t6-giV"/>
+                        <table alignment="left" id="fdN-2w-dh9">
+                            <items>
+                                <tableRow identifier="Celda" id="4Yr-uv-T2W" customClass="Celda" customModule="PizzaWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="P2K-bt-FjN">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="Q6Z-nf-uq9"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="texto" destination="Q6Z-nf-uq9" id="Ctg-S0-TZ1"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tabla" destination="fdN-2w-dh9" id="gO7-X1-o4Z"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="340"/>
+        </scene>
+        <!--masa-->
+        <scene sceneID="JVJ-rR-27b">
+            <objects>
+                <controller identifier="masa" id="f9c-oD-KPW" customClass="masa" customModule="PizzaWatch_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Pizzonator" textAlignment="center" id="Loc-qi-5GP"/>
+                        <label alignment="center" text="Masa" id="nHP-ad-wo4"/>
+                        <table alignment="left" id="pFB-1L-KFd">
+                            <items>
+                                <tableRow identifier="Celda" id="7jH-V4-Ulu" customClass="Celda" customModule="PizzaWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="5wk-CE-y8R">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="kL1-uK-aiu"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="texto" destination="kL1-uK-aiu" id="N7J-SL-Lcl"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tabla" destination="pFB-1L-KFd" id="zi7-Fj-hqA"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="473" y="340"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="PizzaWatch_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--queso-->
+        <scene sceneID="OCl-kK-tzk">
+            <objects>
+                <controller identifier="queso" id="esw-vh-UgO" customClass="queso" customModule="PizzaWatch_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Pizzonator" textAlignment="center" id="14v-vP-WEn"/>
+                        <label alignment="center" text="Queso" id="TbL-ZZ-h65"/>
+                        <table alignment="left" id="kvW-yy-kev">
+                            <items>
+                                <tableRow identifier="Celda" id="xwf-T4-23w" customClass="Celda" customModule="PizzaWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="aNm-bO-qcE">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="TTG-DY-P8b"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="texto" destination="TTG-DY-P8b" id="XyC-Dz-taw"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tabla" destination="kvW-yy-kev" id="Hxe-lp-HhU"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="715" y="340"/>
+        </scene>
+        <!--ingredientes-->
+        <scene sceneID="vde-Xu-EXR">
+            <objects>
+                <controller identifier="ingredientes" id="Xxl-ZS-Vwz" customClass="ingredientes" customModule="PizzaWatch_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Pizzonator" textAlignment="center" id="fiO-WK-H2H"/>
+                        <label alignment="center" text="Ingredientes" id="2Hk-RC-l1I"/>
+                        <table alignment="left" id="3PH-fK-LxJ">
+                            <items>
+                                <tableRow identifier="Celda" id="3l5-uH-0RE" customClass="Celda" customModule="PizzaWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="6aG-Oy-Unv">
+                                        <items>
+                                            <switch width="1" alignment="left" title="Switch" id="Bmc-TL-PgT">
+                                                <connections>
+                                                    <action selector="clicked:" destination="Xxl-ZS-Vwz" id="4b4-Ey-Fsx"/>
+                                                </connections>
+                                            </switch>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="active" destination="Bmc-TL-PgT" id="PaN-2w-7Rr"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Order" id="uVh-Yu-GdI">
+                            <connections>
+                                <action selector="next" destination="Xxl-ZS-Vwz" id="czR-42-RHH"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="tabla" destination="3PH-fK-LxJ" id="9bm-IW-eip"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="983" y="340"/>
+        </scene>
+        <!--resumen-->
+        <scene sceneID="pTx-Oz-QLW">
+            <objects>
+                <controller identifier="resumen" id="F2G-AR-sHH" customClass="resumen" customModule="PizzaWatch_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Pizzonator" textAlignment="center" id="WAi-hB-hix"/>
+                        <label alignment="center" text="Resumen" id="V2v-tR-i51"/>
+                        <table alignment="left" id="MfG-2y-9v6">
+                            <items>
+                                <tableRow identifier="Celda" id="Dx3-fI-3n7" customClass="Celda" customModule="PizzaWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="Zdt-a4-UUg">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="NJY-qh-dZU"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="texto" destination="NJY-qh-dZU" id="WW4-Av-9vl"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Confirma" id="nlo-Ng-7RV">
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" id="AZ9-Yr-t6Q"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Cancela" id="Ocd-je-XRa">
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" id="pXN-DM-vTp"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="tabla" destination="MfG-2y-9v6" id="3Ri-iG-evB"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1274" y="340"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="pXN-DM-vTp"/>
+    </inferredMetricsTieBreakers>
+</document>
